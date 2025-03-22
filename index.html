@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="format-detection" content="telephone=no"> -->
   <title>Maricopa Contractor Yards</title>
   <style>
     body {
@@ -44,6 +45,11 @@
     .header-address a {
       color: #fff;
       text-decoration: underline;
+    }
+    /* Force telephone links to be white if auto-detected */
+    a[href^="tel"] {
+      color: #fff !important;
+      text-decoration: none;
     }
     .container {
       max-width: 900px;
