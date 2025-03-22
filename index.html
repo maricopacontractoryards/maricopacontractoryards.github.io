@@ -21,16 +21,29 @@
       text-align: center;
       padding: 20px 0;
     }
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
     header h1 {
-      margin: 0;
+      margin: 0 0 10px;
       font-size: 2.5em;
     }
-    header p {
-      margin: 5px 0;
-      font-size: 1.1em;
+    .header-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 1.3em;
     }
-    header p span {
-      margin: 0 5px;
+    .header-phone {
+      color: #fff;
+    }
+    .header-address a {
+      color: #fff;
+      text-decoration: underline;
     }
     .container {
       max-width: 900px;
@@ -66,32 +79,35 @@
     }
     /* Mobile improvements */
     @media (max-width: 600px) {
+      header {
+        padding: 10px 0;
+      }
       header h1 {
+        margin-bottom: 5px;
         font-size: 1.8em;
       }
-      header p {
-        font-size: 0.9em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      header p span {
-        margin: 2px 0;
+      .header-contact {
+        font-size: 1.1em;
+        margin-top: 0;
+        gap: 10px;
+        flex-direction: column-reverse;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Maricopa Contractor Yards</h1>
-    <p>
-      <span class="header-phone">(520) 344-3489</span>
-      <span class="header-address">
-        <a href="https://www.google.com/maps/place/53110+W+Jersey+Dr,+Maricopa,+AZ+85139/" target="_blank" style="color: #fff; text-decoration: underline;">
-          53110 W Jersey Dr, Maricopa, AZ 85139
-        </a>
-      </span>
-    </p>
+    <div class="header-content">
+      <h1>Maricopa Contractor Yards</h1>
+      <div class="header-contact">
+        <div class="header-phone">(520) 344-3489</div>
+        <div class="header-address">
+          <a href="https://www.google.com/maps/place/53110+W+Jersey+Dr,+Maricopa,+AZ+85139/" target="_blank">
+            53110 W Jersey Dr, Maricopa, AZ 85139
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
   <div class="container">
     <section>
