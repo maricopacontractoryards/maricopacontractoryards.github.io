@@ -6,34 +6,133 @@
   <title>Maricopa Contractor Yards</title>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #C5AFA4; /* Light earth tone background */
       font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #005a9c;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+    header p span {
+      margin: 0 5px;
     }
     .container {
-      max-width: 400px;
-      width: 100%;
-      text-align: left;
-      color: #355070; /* Earth tone text color */
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .container h1 {
-      font-size: 5rem;
-      margin: 0;
-      line-height: 1.2;
+    h2 {
+      color: #005a9c;
+      margin-top: 15px;
+    }
+    p {
+      margin: 15px 0;
+    }
+    .contact, .directions {
+      background-color: #e2e2e2;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .call-to-action {
+      background-color: #005a9c;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 1.1em;
+    }
+    .call-to-action a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Mobile improvements */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      header p {
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header p span {
+        margin: 2px 0;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Maricopa Contractor Yards</h1>
+    <p>
+      <span class="header-phone">(520) 344-3489</span>
+      <span class="header-address">
+        <a href="https://www.google.com/maps/place/53110+W+Jersey+Dr,+Maricopa,+AZ+85139/" target="_blank" style="color: #fff; text-decoration: underline;">
+          53110 W Jersey Dr, Maricopa, AZ 85139
+        </a>
+      </span>
+    </p>
+  </header>
   <div class="container">
-    <h1>
-      Maricopa<br>
-      Contractor<br>
-      Yards
-    </h1>
+    <section>
+      <h2>Affordable Outdoor Storage Facilities</h2>
+      <p>
+        Our full-service storage yards are designed to safely store all the equipment you need to run your business. Enjoy top-end amenities including state-of-the-art security, 24/7 yard access, high clearance and wide entry driveways for oversized vehicles, plus on-site parking.
+      </p>
+    </section>
+    <section>
+      <h2>Secure. Monitored. Private.</h2>
+      <p>
+        Our Maricopa facility offers a secure and easily accessible outdoor storage solution. With advanced security features and ample space, you can trust us to keep your equipment safe and ready when you need it.
+      </p>
+    </section>
+    <section>
+      <h2>Why Store With Us?</h2>
+      <p>
+        Our contractor storage yards are accessible 24/7 via a secure, code-entry lock gate. Our facilities are continuously monitored by 24-hour security cameras that upload footage to the cloud, ensuring safety even during power outages.
+      </p>
+      <p>
+        We offer a variety of yard sizes—from <strong>8,600 sq. ft.</strong> up to <strong>1 acre</strong>—with 20’ yard gates for convenient access. With competitive pricing, we’re the clear choice for all your contractor and outdoor storage needs.
+      </p>
+    </section>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>
+        For all your contractor and outdoor storage needs, contact ENVIROCRETE, LLC at (520) 344-3489 and ask for Joe.
+      </p>
+    </section>
+    <section class="directions">
+      <h2>Directions</h2>
+      <p>
+        From Maricopa Road, go west on Smith Enke (AKA AZ-238). Proceed past Southern Dunes Golf Course &amp; Apex Motor Club Speedway (approximately 3 miles), turn right onto Warren Road, then turn left on Jersey Drive. Continue west (about 300 yards) until you see the large green building marking the entrance.
+      </p>
+      <p>
+        Facility Address: <a href="https://www.google.com/maps/place/53110+W+Jersey+Dr,+Maricopa,+AZ+85139/" target="_blank">53110 W Jersey Dr, Maricopa, AZ 85139</a>
+      </p>
+    </section>
+    <div class="call-to-action">
+      <p>Call us today to reserve your storage space!</p>
+    </div>
   </div>
 </body>
 </html>
