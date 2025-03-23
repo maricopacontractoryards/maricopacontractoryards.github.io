@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <meta name="format-detection" content="telephone=no"> -->
   <title>Maricopa Contractor Yards</title>
   <style>
     body {
@@ -46,7 +45,6 @@
       color: #fff;
       text-decoration: underline;
     }
-    /* Force telephone links to be white if auto-detected */
     header a[href^="tel"] {
       color: #fff !important;
       text-decoration: none;
@@ -56,7 +54,6 @@
       margin: 20px auto;
       background: #fff;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h2 {
       color: #005a9c;
@@ -83,7 +80,50 @@
       text-decoration: none;
       font-weight: bold;
     }
-    /* Mobile improvements */
+    .rental-options {
+      margin-top: 20px;
+    }
+    .rental-options h2 {
+      color: #005a9c;
+      margin-bottom: 10px;
+    }
+    .rental-options p.description {
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    .rental-boxes {
+      display: flex;
+      gap: 20px;
+    }
+    .rental-options .rental-box {
+      flex: 1 1 calc(25% - 20px);
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px;
+      padding: 15px;
+      background-color: #005a9c;
+      color: #fff;
+      text-align: left;
+    }
+    .rental-box h3 {
+      margin: 0;
+      font-family: monospace;
+      font-weight: 300;
+      font-size: 1.6em;
+      margin-top: -5px;
+      word-spacing: -0.3em;
+    }
+    .rental-box p {
+      margin: 2px 0;
+      font-family: monospace;
+      font-size: 1.1em;
+    }
+    .price {
+      margin-top: auto;
+      margin-bottom: -10px;
+      font-size: 1.3em;
+      text-align: right;
+    }
     @media (max-width: 600px) {
       header {
         padding: 10px 0;
@@ -97,6 +137,12 @@
         margin-top: 0;
         gap: 10px;
         flex-direction: column-reverse;
+      }
+      .rental-boxes {
+        flex-direction: column;
+      }
+      .rental-options .rental-box {
+        flex: 1 1 100%;
       }
     }
   </style>
@@ -117,30 +163,58 @@
   </header>
   <div class="container">
     <section>
-      <h2>Affordable Outdoor Storage Facilities</h2>
+      <h2>Affordable Outdoor Equipment Storage</h2>
       <p>
-        Our full-service storage yards are designed to safely store all the equipment you need to run your business. Enjoy top-end amenities including state-of-the-art security, 24/7 yard access, high clearance and wide entry driveways for oversized vehicles, plus on-site parking.
+        Our storage yards are designed to safely store all the equipment you need to run your business. Enjoy top-end amenities including state-of-the-art security, 24/7 yard access, and 20-foot wide entryways.
       </p>
     </section>
     <section>
       <h2>Secure. Monitored. Private.</h2>
       <p>
-        Our Maricopa facility offers a secure and easily accessible outdoor storage solution. With advanced security features and ample space, you can trust us to keep your equipment safe and ready when you need it.
+        Our Maricopa facility offers a secure and easily accessible outdoor storage solution tailored for contractors. With advanced security features and ample space, your equipment will be safe and ready when you need it.
       </p>
     </section>
     <section>
       <h2>Why Store With Us?</h2>
       <p>
-        Our contractor storage yards are accessible 24/7 via a secure, code-entry lock gate. Our facilities are continuously monitored by 24-hour security cameras that upload footage to the cloud, ensuring safety even during power outages.
+        Our contractor storage yards are accessible 24/7 via a secure, code-entry lock gate. Facilities are continuously monitored by security cameras that upload footage to the cloud, ensuring safety even during power outages.
       </p>
       <p>
-        We offer a variety of yard sizes—from <strong>8,600 sq. ft.</strong> up to <strong>1 acre</strong>—with 20’ yard gates for convenient access. With competitive pricing, we’re the clear choice for all your contractor and outdoor storage needs.
+        We offer a variety of yard sizes — from <strong>8,600 sq. ft.</strong> up to <strong>1 acre</strong> — with each yard featuring a dual 10-foot gate entrance for convenient and secure access.
       </p>
+    </section>
+    <section class="rental-options">
+      <h2>Yard Lease Options</h2>
+      <p class="description">
+        Choose from our available contractor yard size options:
+      </p>
+      <div class="rental-boxes">
+        <div class="rental-box">
+          <h3>70' x 122'</h3>
+          <p></p>
+          <div class="price">$650 / mo</div>
+        </div>
+        <div class="rental-box">
+          <h3>63' x 150'</h3>
+          <p></p>
+          <div class="price">$750 / mo</div>
+        </div>
+        <div class="rental-box">
+          <h3>152' x 143'</h3>
+          <p>1/2 acre</p>
+          <div class="price">$1500 / mo</div>
+        </div>
+        <div class="rental-box">
+          <h3>70' x 633'</h3>
+          <p>1 acre</p>
+          <div class="price">$2250 / mo</div>
+        </div>
+      </div>
     </section>
     <section class="contact">
       <h2>Contact Us</h2>
       <p>
-        For all your contractor and outdoor storage needs, contact ENVIROCRETE, LLC at (520) 344-3489 and ask for Joe.
+        For all your contractor equipment storage needs, contact ENVIROCRETE, LLC at (520) 344-3489 and ask for Joe.
       </p>
     </section>
     <section class="directions">
@@ -153,7 +227,7 @@
       </p>
     </section>
     <div class="call-to-action">
-      <p>Call us today to reserve your storage space!</p>
+      <p>Call us today to reserve your storage space</p>
     </div>
   </div>
 </body>
